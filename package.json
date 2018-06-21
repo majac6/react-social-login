@@ -5,6 +5,7 @@
   "author": "majac6",
   "license": "MIT",
   "repository": "https://github.com/majac6/react-social-login",
+  "homepage": "https://majac6.github.io/react-social-login",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

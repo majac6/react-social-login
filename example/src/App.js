@@ -9,16 +9,8 @@ export default class App extends Component {
       '908589904410-evstjaeri2ahnvbu8ivvjghmo1uujttn.apps.googleusercontent.com'
   };
 
-  onChange = e => {
-    const { name, value } = e.target;
-    this.setState({
-      [name]: value
-    });
-  };
-
   render() {
     const { facebook, google } = this.state;
-    const { onChange } = this;
     return (
       <div>
         <h1>FaceBook And Google Login Component</h1>

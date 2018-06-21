@@ -13,15 +13,27 @@ npm install --save @majac/react-social-login
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import MyComponent from '@majac/react-social-login'
+import SocialLogin from '@majac/react-social-login';
 
 class Example extends Component {
-  render () {
+  render() {
     return (
-      <MyComponent />
-    )
+      <SocialLogin
+        options={{
+          provider: 'facebook or google',
+          appId: 'Your App ID',
+          onSuccess: res => {
+            console.log('Login Success', res);
+          },
+          onFail: error => {
+            console.log('Login Fail', error);
+          }
+        }}
+        component={<button>FaceBook Login</button>}
+      />
+    );
   }
 }
 ```

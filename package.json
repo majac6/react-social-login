@@ -1,6 +1,6 @@
 {
   "name": "@majac/react-social-login",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Social Login Module For React",
   "author": "majac6",
   "license": "MIT",
@@ -8,6 +8,15 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "keywords": [
+    "facebook",
+    "react",
+    "oAuth",
+    "login",
+    "social",
+    "google",
+    "majac"
+  ],
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",

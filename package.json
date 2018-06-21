@@ -4,7 +4,7 @@
   "description": "Social Login Module For React",
   "author": "majac6",
   "license": "MIT",
-  "repository": "majac6/react-social-login",
+  "repository": "https://github.com/majac6/react-social-login",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

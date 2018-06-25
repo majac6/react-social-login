@@ -71,7 +71,9 @@ class SocialLogin extends Component {
               email: res.w3.U3,
               first_name: res.w3.ofa,
               last_name: res.w3.wea,
-              picture: res.w3.Paa
+              picture: res.w3.Paa,
+              id: res.w3.Eea,
+              origin: res
             }
             onSuccess(res)
           },

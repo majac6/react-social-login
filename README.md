@@ -10,6 +10,19 @@
 npm install --save @majac/react-social-login
 ```
 
+## Demo
+
+[Demo Link](https://majac6.github.io/react-social-login/)
+
+## Update Logs
+
+#### 1.0.3
+
+- 데모 링크 추가
+- Provide Demo
+- 구글 로그인의 리턴값에 ID 항목을 추가하고, 변환되기 전 리턴값을 origin 의 키 값으로 제공합니다.
+- Return JSON to google Added ID And Origin that include google auth origin return JSON
+
 ## Usage
 
 ```jsx

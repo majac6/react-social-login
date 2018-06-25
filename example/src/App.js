@@ -4,9 +4,9 @@ import SocialLogin from '@majac/react-social-login';
 
 export default class App extends Component {
   state = {
-    facebook: '230341774161033',
+    facebook: '209645556333608',
     google:
-      '908589904410-evstjaeri2ahnvbu8ivvjghmo1uujttn.apps.googleusercontent.com'
+      '822948870637-d66kvrbaq0luakn5nfrs05egu2fl2u7r.apps.googleusercontent.com'
   };
 
   render() {

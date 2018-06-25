@@ -1,10 +1,11 @@
 {
   "name": "@majac/react-social-login",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Social Login Module For React",
   "author": "majac6",
   "license": "MIT",
   "repository": "https://github.com/majac6/react-social-login",
+  "homepage": "https://majac6.github.io/react-social-login/",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

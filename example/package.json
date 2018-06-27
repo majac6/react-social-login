@@ -5,10 +5,10 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "@majac/react-social-login": "^1.0.2",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "@majac/react-social-login": "*",
     "react-scripts": "^1.1.1"
   },
   "scripts": {

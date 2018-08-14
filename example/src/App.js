@@ -19,7 +19,7 @@ export default class App extends Component {
             provider: 'facebook',
             appId: facebook,
             onSuccess: res => {
-              console.log('Login Success', res);
+              console.log(res);
             },
             onFail: error => {
               console.log('Login Fail', error);

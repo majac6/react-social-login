@@ -40,8 +40,10 @@ class SocialLogin extends Component {
             window.FB.api(
               '/me',
               res => {
-                res.picture = res.picture.data.url
-                onSuccess(res)
+                res.picture = res.picture.data.url;
+                res.origin = FB.getAuthResponse();
+                res.token = res.origin.accessToken;
+                onSuccess(res);
               },
               { fields: fields }
             )

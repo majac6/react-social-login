@@ -14,12 +14,14 @@ export default class App extends Component {
     return (
       <div>
         <h1>FaceBook And Google Login Component</h1>
+
+        <div>open_mmpbikb_user@tfbnw.net / test1234!</div>
         <SocialLogin
           options={{
             provider: 'facebook',
             appId: facebook,
             onSuccess: res => {
-              console.log(res);
+              console.log('Login Success', res);
             },
             onFail: error => {
               console.log('Login Fail', error);

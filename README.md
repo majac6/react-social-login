@@ -16,7 +16,7 @@ npm install --save @majac/react-social-login
 
 ## Update Logs
 
-#### 1.0.4
+#### 1.0.6
 
 ##### Korean
 
@@ -27,6 +27,10 @@ npm install --save @majac/react-social-login
 
 - Fixed token value and email added to Facebook login.
 - _HOTFIX_ You get user email address when Facebook Logined.
+
+#### 1.0.4 & 1.0.5
+
+-
 
 #### 1.0.3
 

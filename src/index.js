@@ -26,8 +26,8 @@ class SocialLogin extends Component {
       onFail: res => {
         console.warn('Need your func at onFail Attr!', res)
       },
-      fields: 'email,first_name,last_name,picture',
-      ...originOptions
+      ...originOptions,
+      fields: 'email,first_name,last_name,picture,middle_name,name,gender'
     }
     const { provider, onSuccess, onFail, fields, appId } = options
 
@@ -35,23 +35,24 @@ class SocialLogin extends Component {
       if (!facebook) return
       window.FB.login(
         res => {
+          // console.log(res)
           if (res.authResponse) {
             // 로그인 성공
             window.FB.api(
               '/me',
               res => {
-                res.picture = res.picture.data.url;
-                res.origin = FB.getAuthResponse();
-                res.token = res.origin.accessToken;
-                onSuccess(res);
+                res.picture = res.picture.data.url
+                res.origin = FB.getAuthResponse()
+                res.token = res.origin.accessToken
+                onSuccess(res)
               },
               { fields: fields }
             )
           } else {
             onFail(res)
           }
-        }
-        // { scope: 'public_profile,email', return_scopes: false }
+        },
+        { scope: 'public_profile,email', return_scopes: false }
       )
     } else if (provider === 'google') {
       const googleLoginBtnElement = document.getElementById(

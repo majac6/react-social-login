@@ -19,18 +19,24 @@ npm install --save @majac/react-social-login
 #### 1.0.4
 
 ##### Korean
+
 - 페이스북 로그인부분 토큰값과 이메일 추가적으로 나오도록 수정.
+- _긴급수정_ 1.0.4 버전에서 페이스북 로그인 이후 이메일 값이 정상적으로 리턴되지 않는 문제 해결.
 
 ##### English
+
 - Fixed token value and email added to Facebook login.
+- _HOTFIX_ You get user email address when Facebook Logined.
 
 #### 1.0.3
 
 ##### Korean
+
 - 데모 링크 추가
 - 구글 로그인의 리턴값에 ID 항목을 추가하고, 변환되기 전 리턴값을 origin 의 키 값으로 제공합니다.
 
 ##### English
+
 - Provide Demo
 - Return JSON to google Added ID And Origin that include google auth origin return JSON
 

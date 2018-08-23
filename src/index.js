@@ -32,7 +32,6 @@ class SocialLogin extends Component {
     const { provider, onSuccess, onFail, fields, appId } = options
 
     if (provider === 'facebook') {
-      if (!facebook) return
       window.FB.login(
         res => {
           // console.log(res)
@@ -108,6 +107,7 @@ class SocialLogin extends Component {
 
     if (provider === 'facebook') {
       if (facebook) return
+      // 이미 init 되었을 경우 아래 동작을 수행하지 않음.
 
       // FB 가 준비되면 실행될 함수를 담아둠.
       window.fbAsyncInit = () => {
@@ -132,6 +132,11 @@ class SocialLogin extends Component {
         })
       })(document, 'script', 'facebook-jssdk')
     } else if (provider === 'google') {
+      if (typeof window.gapi !== 'undefined') {
+        return false
+      }
+      // 이미 init 되었을 경우 아래 동작을 수행하지 않음.
+
       ;((d, s, id) => {
         const element = d.getElementsByTagName(s)[0]
         const fjs = element

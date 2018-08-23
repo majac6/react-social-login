@@ -16,6 +16,38 @@ npm install --save @majac/react-social-login
 
 ## Update Logs
 
+#### 1.0.9
+
+##### Korean
+
+- 버그 수정
+
+##### English
+
+- Bug Fix
+
+#### 1.0.8
+
+##### Korean
+
+- 버그 수정
+
+##### English
+
+- Bug Fix
+
+#### 1.0.7
+
+##### Korean
+
+- 페이스북 로그인 창을 불필요하게 호출하지 않도록 변경.
+- 페이스북, 구글 SDK 가 존재할 경우 반복해서 init 하지 않록 변경.
+
+##### English
+
+- Change your Facebook login window to avoid unnecessary calls.
+- If Facebook or Google SDK exists, change repeatedly without init.
+
 #### 1.0.6
 
 ##### Korean
